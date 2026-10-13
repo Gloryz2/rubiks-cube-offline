@@ -1,0 +1,31 @@
+# Local review files and original backup are never published.
+/.review/
+/node_modules/
+/coverage/
+/test-results/
+/playwright-report/
+
+# Credentials and private machine configuration.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
+.npmrc
+/.aws/
+/.ssh/
+/.codex/
+/.agents/
+/.vscode/
+/.idea/
+
+# Local archives and OS files.
+*.zip
+*.tar
+*.tgz
+.DS_Store
+Thumbs.db
+desktop.ini

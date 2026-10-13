@@ -1,0 +1,23 @@
+{
+  "name": "rubiks-cube-offline",
+  "version": "1.0.0",
+  "private": true,
+  "description": "离线运行的三阶魔方打乱与复原演示",
+  "author": "Gloryz2",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:check": "node scripts/build.mjs --check",
+    "test": "node --test",
+    "check:privacy": "node scripts/check-privacy.mjs",
+    "check": "npm run build:check && npm test && npm run check:privacy"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "three": "0.180.0"
+  }
+}
